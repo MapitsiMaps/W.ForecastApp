@@ -1,0 +1,17 @@
+h1 {
+    font-family: "Kaisei HarunoUmi", serif;
+    font-weight: 300 bold;
+    font-style: normal;
+
+}
+.main-sec {
+    font-family: "Kaisei HarunoUmi", serif;
+    font-weight: 550;
+    font-style: normal;
+    background: linear-gradient(181.2deg, rgb(181, 239, 249) 10.5%, rgb(254, 254, 254) 86.8%);
+    max-width: 700px;
+    margin: 45px auto;
+    box-shadow: 0 30px 50px rgb(168, 243, 243);
+    padding: 30px;
+
+}
