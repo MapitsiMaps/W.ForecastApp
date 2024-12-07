@@ -2,7 +2,9 @@ h1 {
     font-family: "Kaisei HarunoUmi", serif;
     font-weight: 300 bold;
     font-style: normal;
-
+}
+a {
+    color: rgb(11, 98, 164);
 }
 .main-sec {
     font-family: "Kaisei HarunoUmi", serif;
@@ -13,5 +15,71 @@ h1 {
     margin: 45px auto;
     box-shadow: 0 30px 50px rgb(168, 243, 243);
     padding: 30px;
-
+    border-radius: 16px;
+}
+header {
+    border-bottom: 1px solid rgb(140, 202, 220);
+    padding: 0 0 30px 0;
+}
+.search-form-input {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    width: 80%;
+    font-size: 16px;
+}
+.search-form-button {
+    background: #7db9e0;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    color: rgb(9, 68, 113);
+    margin-left: 5px;
+}
+.app-data {
+    display: flex;
+    justify-content: space-between;
+}
+main {
+    padding: 30px 0;
+}
+.app-city {
+    margin: 0;
+    font-size: 38px;
+    line-height: 48px;
+}
+.app-details {
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+}
+.app-details strong {
+    color: rgb(46, 123, 200);
+}
+.app-temp-wrapper {
+    display: flex;
+}
+.app-icon {
+    font-size: 25px;
+    margin-top: 20px;
+}
+.app-temp-value {
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.app-unit {
+    margin-top: 5px;
+    font-size: 20px;
+}
+footer {
+    border-top: 1px solid rgb(140, 202, 220);
+    padding: 30px 0 0 0;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
 }
