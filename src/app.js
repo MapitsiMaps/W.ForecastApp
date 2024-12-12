@@ -7,10 +7,12 @@ function refreshWeather(response) {
   let wind = document.querySelector("#speed");
   let dayTime = document.querySelector("#day-time");
   let date = new Date(response.data.time * 1000);
+  let icon = document.querySelector("#icon");
 
 
   console.log(response.data);
 
+  icon.innerHTML = `<img src="${response.data.condition.icon_url}" class="app-icon" />`;
   city.innerHTML = response.data.city;
   dayTime.innerHTML = formatDate(date);
   condition.innerHTML = `${response.data.condition.description}`;
