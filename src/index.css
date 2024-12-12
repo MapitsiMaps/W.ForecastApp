@@ -1,8 +1,3 @@
-h1 {
-    font-family: "Kaisei HarunoUmi", serif;
-    font-weight: 300 bold;
-    font-style: normal;
-}
 a {
     color: rgb(11, 98, 164);
 }
@@ -63,9 +58,9 @@ main {
     display: flex;
 }
 .app-icon {
-    
-    width: 88px;
-    height: 88px;
+    width: 99px;
+    height: 99px;
+    margin-top: 5px;
 }
 .app-temp-value {
     font-size: 88px;
@@ -75,6 +70,32 @@ main {
 .app-unit {
     margin-top: 6px;
     font-size: 28px;
+}
+.app-forecast {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.app-forecast-day {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.app-forecast-icon {
+    text-align: center;
+    font-size: 38px;
+}
+.app-forecast-temp-values {
+    text-align: center;
+    color: rgb(46, 123, 200);
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.app-forecast-temp-value {
+    padding: 0 10px;
 }
 footer {
     border-top: 1px solid rgb(140, 202, 220);
