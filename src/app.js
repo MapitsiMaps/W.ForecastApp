@@ -59,9 +59,42 @@ function handleSearch(event) {
 
     searchCity(searchInput.value);
 }
+
+function displayForecast() {
+  
+  let days = ["Tue", "Wed", "Thur", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml +=
+      `
+      <div class="app-forecast-temp">
+        <div class="app-forecast-day">${day}</div>
+        <div class="app-forecast-icon">🌪</div>
+        <div class="app-forecast-temp-values">
+          <div class="app-forecast-temp-value">
+            <strong>15°</strong>
+          </div> 
+        <div class="app-forecast-temp-value">9°</div>
+      </div>
+    </div>
+    `;
+  });
+
+  let forecast = document.querySelector("#app-forecast");
+  forecast.innerHTML = forecastHtml;
+
+}
+  
+
+
     
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearch);
 
 searchCity("Mokopane");
+
+displayForecast();
+
+
 
